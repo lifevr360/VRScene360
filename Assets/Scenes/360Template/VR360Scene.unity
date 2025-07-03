@@ -19746,7 +19746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1856385198
 Transform:
   m_ObjectHideFlags: 0
@@ -21197,7 +21197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 2004008015}
   audioSource: {fileID: 0}
-  videoUrls: []
+  videoUrls:
+  - /storage/emulated/0/Android/data/com.NEXTIN_LABS.NandiPlayer/files/0.mp4
 --- !u!1 &2018069620
 GameObject:
   m_ObjectHideFlags: 0
