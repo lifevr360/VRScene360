@@ -6,7 +6,7 @@ using UnityEngine.Video;
 public class VideoManager : MonoBehaviour
 {
     [Header("Video Settings")]
-    public VideoPlayer videoPlayer; // /storage/emulated/0/Android/obb/com.LifeVR.VRScene360/files/0.mp4
+    public VideoPlayer videoPlayer; // /storage/emulated/0/Android/obb/com.LifeVR.VRScene360/files/0.mp4 -  here files folder will not be created automatically so go for this /storage/emulated/0/Android/obb/com.LifeVR.VRZoo/0.mp4
     public AudioSource audioSource;
     public List<string> videoUrls;
 
