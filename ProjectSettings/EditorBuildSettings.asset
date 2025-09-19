@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/360Template/VR360Scene.unity
     guid: 02e26797feea9bb408f9f21fd308e411
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/360Template/WebGL360Scene.unity
     guid: 85edb4e33102c154387b787335bd7e44
+  - enabled: 1
+    path: Assets/Scenes/VR_Zoo.unity
+    guid: 374629e76807ee243b82d0b503be3473
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f822a17815574074bb9670a457a692bd,
       type: 2}
