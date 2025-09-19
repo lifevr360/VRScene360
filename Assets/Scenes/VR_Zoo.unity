@@ -1900,7 +1900,7 @@ GameObject:
   - component: {fileID: 131929068}
   - component: {fileID: 131929067}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Button_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3155,7 +3155,7 @@ GameObject:
   - component: {fileID: 209626011}
   - component: {fileID: 209626010}
   m_Layer: 0
-  m_Name: Button (2)
+  m_Name: Button_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10196,7 +10196,7 @@ GameObject:
   - component: {fileID: 854629386}
   - component: {fileID: 854629385}
   m_Layer: 0
-  m_Name: Button (5)
+  m_Name: Button_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10281,7 +10281,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 4
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -14565,7 +14565,7 @@ GameObject:
   - component: {fileID: 1254646502}
   - component: {fileID: 1254646501}
   m_Layer: 0
-  m_Name: Button (3)
+  m_Name: Button_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14650,7 +14650,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -19168,7 +19168,7 @@ GameObject:
   - component: {fileID: 1592239962}
   - component: {fileID: 1592239961}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Button_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19253,7 +19253,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -23064,7 +23064,7 @@ GameObject:
   - component: {fileID: 1842912313}
   - component: {fileID: 1842912312}
   m_Layer: 0
-  m_Name: Button (4)
+  m_Name: Button_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23149,7 +23149,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 5
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -28153,7 +28153,7 @@ Transform:
   m_GameObject: {fileID: 4655362486432028813}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -1.1641532e-10, z: -1.1641532e-10, w: 0.7071068}
-  m_LocalPosition: {x: 0.00016543473, y: 0.000121612204, z: 0.00001679683}
+  m_LocalPosition: {x: 0.00016543349, y: 0.00012163346, z: 0.00001679684}
   m_LocalScale: {x: 0.0033, y: 0.0033, z: 0.0033}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -30195,7 +30195,7 @@ Transform:
   m_GameObject: {fileID: 6272068987924853912}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.0012801816, z: -0, w: 0.9999992}
-  m_LocalPosition: {x: 0.692, y: 1.032, z: 2.012}
+  m_LocalPosition: {x: -0.031, y: 1.032, z: 2.012}
   m_LocalScale: {x: 0.24077956, y: 0.24077956, z: 0.24077956}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30337,9 +30337,9 @@ Transform:
   m_GameObject: {fileID: 3490355995305538673}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0.01, y: 0, z: -2.87}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 159765430290425643}
   - {fileID: 1101774931166377390}
@@ -30881,15 +30881,15 @@ MonoBehaviour:
     useClippedPercent: 0
     keys: []
   _clipFromSample:
-    position: {x: 0.22744256, y: 1.0334084, z: 1.0540432}
-    up: {x: -7.421335e-11, y: 0.24314797, z: -0.000000072463635}
+    position: {x: -0.12327301, y: 1.0322816, z: 1.1293674}
+    up: {x: -1.4842669e-11, y: 0.048629593, z: -0.000000014492727}
     forward: {x: 0, y: 0, z: 0}
     color: {r: 1, g: 1, b: 1, a: 1}
     size: 1
     percent: 0
   _clipToSample:
-    position: {x: 0.22744256, y: 1.0334084, z: 1.0540432}
-    up: {x: -7.421335e-11, y: 0.24314797, z: -0.000000072463635}
+    position: {x: -0.12327301, y: 1.0322816, z: 1.1293674}
+    up: {x: -1.4842669e-11, y: 0.048629593, z: -0.000000014492727}
     forward: {x: 0, y: 0, z: 0}
     color: {r: 1, g: 1, b: 1, a: 1}
     size: 1
@@ -30935,8 +30935,8 @@ MonoBehaviour:
   targetRigidbody2D: {fileID: 0}
   targetTransform: {fileID: 1463957515769775154}
   _result:
-    position: {x: 0.22744256, y: 1.0334084, z: 1.0540432}
-    up: {x: -7.421335e-11, y: 0.24314797, z: -0.000000072463635}
+    position: {x: -0.12327301, y: 1.0322816, z: 1.1293674}
+    up: {x: -1.4842669e-11, y: 0.048629593, z: -0.000000014492727}
     forward: {x: 0, y: 0, z: 0}
     color: {r: 1, g: 1, b: 1, a: 1}
     size: 1
@@ -31082,18 +31082,18 @@ MonoBehaviour:
     XAxis:
       ConstrainAxis: 1
       AxisRange:
-        Min: 1
-        Max: 3
+        Min: 0.05
+        Max: 2
     YAxis:
       ConstrainAxis: 1
       AxisRange:
-        Min: 1
-        Max: 3
+        Min: 0.05
+        Max: 2
     ZAxis:
       ConstrainAxis: 1
       AxisRange:
-        Min: 1
-        Max: 3
+        Min: 0.05
+        Max: 2
 --- !u!1 &4861788993242690487
 GameObject:
   m_ObjectHideFlags: 0
@@ -32491,7 +32491,7 @@ MonoBehaviour:
   _scoringModifier:
     _positionRotationWeight: 0.8
   _slippiness: 0
-  _supportedGrabTypes: 1
+  _supportedGrabTypes: -1
   _pinchGrabRules:
     _thumbRequirement: 2
     _indexRequirement: 2
