@@ -7,7 +7,6 @@ public class AnimalVideoSwitcher : MonoBehaviour
     public VideoManager videoManager;
 
     [Header("UI References")]
-    public GameObject menuPanel;         // UI with sub video buttons
     public GameObject backButton;     // UI with back button
 
     private double savedBaseVideoTime = 0;
@@ -17,8 +16,6 @@ public class AnimalVideoSwitcher : MonoBehaviour
     {
         // Play the base video on start (index 0 in videoUrls)
         videoManager.PlayVideo(0);
-
-        menuPanel.SetActive(true);
         backButton.SetActive(false);
 
         // Subscribe to video end event
@@ -42,7 +39,6 @@ public class AnimalVideoSwitcher : MonoBehaviour
         }
 
         isInSubVideo = true;
-        menuPanel.SetActive(false);
         backButton.SetActive(true);
 
         // Play the selected sub video
@@ -52,7 +48,6 @@ public class AnimalVideoSwitcher : MonoBehaviour
     public void BackToBaseVideo()
     {
         isInSubVideo = false;
-        menuPanel.SetActive(true);
         backButton.SetActive(false);
 
         // Resume base video (index 0)
