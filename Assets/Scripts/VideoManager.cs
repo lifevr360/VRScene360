@@ -12,10 +12,6 @@ public class VideoManager : MonoBehaviour
 
     private int currentVideoIndex = -1; // Track the currently playing video
 
-    private void Start()
-    {
-        PlayVideo(0);
-    }
 
     public void PlayVideo(int videoIndex)
     {
