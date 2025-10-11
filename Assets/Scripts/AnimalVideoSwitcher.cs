@@ -6,10 +6,14 @@ public class AnimalVideoSwitcher : MonoBehaviour
     [Header("Reference to Video Manager")]
     public VideoManager videoManager;
 
+    [Header("Reference to Spline Controller (optional)")]
+    public VideoSplineController videoSplineController; // assign if you're using splines
+
     [Header("UI References")]
     public GameObject backButton;     // UI with back button
 
     private double savedBaseVideoTime = 0;
+    private double savedBasePercent = -1;
     private bool isInSubVideo = false;
 
     private void Start()
@@ -18,8 +22,9 @@ public class AnimalVideoSwitcher : MonoBehaviour
         videoManager.PlayVideo(0);
         backButton.SetActive(false);
 
-        // Subscribe to video end event
-        videoManager.videoPlayer.loopPointReached += OnVideoFinished;
+        // Subscribe to video end event (optional)
+        if (videoManager != null && videoManager.videoPlayer != null)
+            videoManager.videoPlayer.loopPointReached += OnVideoFinished;
     }
 
     public void PlaySubVideo(int index)
@@ -32,16 +37,25 @@ public class AnimalVideoSwitcher : MonoBehaviour
             return;
         }
 
-        // Save the base video timestamp
+        // Save the base video timestamp and spline percent ONLY when switching from base -> first sub
         if (!isInSubVideo)
         {
-            savedBaseVideoTime = videoManager.videoPlayer.time;
+            if (videoManager != null && videoManager.videoPlayer != null)
+            {
+                savedBaseVideoTime = videoManager.videoPlayer.time;
+            }
+
+            if (videoSplineController != null && videoSplineController.follower != null)
+            {
+                // follower.result.percent is the current percent on spline
+                savedBasePercent = videoSplineController.follower.result.percent;
+            }
+
+            isInSubVideo = true;
+            backButton.SetActive(true);
         }
 
-        isInSubVideo = true;
-        backButton.SetActive(true);
-
-        // Play the selected sub video
+        // Play the selected sub video (we don't touch savedBase values when swapping between subs)
         videoManager.PlayVideo(index);
     }
 
@@ -50,11 +64,8 @@ public class AnimalVideoSwitcher : MonoBehaviour
         isInSubVideo = false;
         backButton.SetActive(false);
 
-        // Resume base video (index 0)
-        videoManager.PlayVideo(0);
-
-        // Restore timestamp
-        videoManager.videoPlayer.time = savedBaseVideoTime;
+        // Resume base video (index 0) and pass both resumeTime and resumePercent
+        videoManager.PlayVideo(0, savedBaseVideoTime, savedBasePercent);
     }
 
     private void OnVideoFinished(VideoPlayer vp)
