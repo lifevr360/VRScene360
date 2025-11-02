@@ -5,12 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Nest/Nest_VR.unity
     guid: 81362c4e2f4c0664bacb15875014e1f2
-  - enabled: 1
-    path: Assets/Scenes/Nest/Nest_Mobile.unity
-    guid: 626f004859a3b99428acda7348293dc0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
