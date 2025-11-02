@@ -6,89 +6,82 @@ using UnityEngine.Video;
 public class VideoManager : MonoBehaviour
 {
     [Header("Video Settings")]
-    public VideoPlayer videoPlayer; // /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/0.mp4
+    public VideoPlayer videoPlayer;
     public AudioSource audioSource;
-    public List<string> videoUrls;
+    public List<VideoClip> videoClips;  // Drag and drop VideoClips here in the Inspector
 
-    private int currentVideoIndex = -1; // Track the currently playing video
+    private int currentVideoIndex = -1;
 
     private void Start()
     {
-        PlayVideo(0);
+        // Play the first video automatically (optional)
+        if (videoClips.Count > 0)
+            PlayVideo(0);
+        else
+            Debug.LogWarning("No video clips assigned to VideoManager.");
     }
 
     public void PlayVideo(int videoIndex)
     {
-        // Check if the requested video is already playing
+        // Ignore request if the same video is already playing
         if (videoIndex == currentVideoIndex && videoPlayer.isPlaying)
         {
             Debug.Log("Video is already playing. Ignoring request.");
             return;
         }
-        
-        if (videoIndex < 0 || videoIndex >= videoUrls.Count)
+
+        // Check for valid index
+        if (videoIndex < 0 || videoIndex >= videoClips.Count)
         {
             Debug.LogError("Invalid video index: " + videoIndex);
             return;
         }
-        Debug.Log("Stopped coroutines.");
+
         StopAllCoroutines();
         StartCoroutine(StartPlayingVideo(videoIndex));
-       
     }
-
 
     private IEnumerator StartPlayingVideo(int index)
     {
+        // Stop current video if playing
         if (videoPlayer.isPlaying)
         {
             videoPlayer.Stop();
             Debug.Log("Stopped current video.");
         }
 
-       /* if (audioSource.isPlaying)
-        {
-            // Stop the currently playing audio
-            audioSource.Stop();
-            Debug.Log("Stopped current audio.");
-        }*/
-
-        videoPlayer.url = videoUrls[index];
+        // Assign new clip and prepare
+        videoPlayer.clip = videoClips[index];
         videoPlayer.Prepare();
 
         while (!videoPlayer.isPrepared)
         {
             yield return null;
         }
+
+        // Play video
         videoPlayer.Play();
         currentVideoIndex = index;
-       
-
-        Debug.Log("Playing video from URL: " + videoUrls[index]);
+        Debug.Log("Playing video: " + videoClips[index].name);
     }
 
     public void OnPlayAudio(AudioClip newClip)
     {
-        Debug.Log("Stopped video  coroutines.");
+        Debug.Log("Stopped video coroutines.");
         StopAllCoroutines();
-        
 
         if (videoPlayer != null && videoPlayer.isPlaying)
         {
-            Debug.Log("Stopping videos");
+            Debug.Log("Stopping video playback.");
             videoPlayer.Stop();
         }
 
         if (audioSource.isPlaying)
         {
-            // Stop the currently playing audio
             audioSource.Stop();
         }
 
-        // Assign the new clip and play it
         audioSource.clip = newClip;
         audioSource.Play();
     }
-
-   
 }

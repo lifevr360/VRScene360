@@ -3480,7 +3480,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -3522,10 +3522,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1592053948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62d83823d063a6d4197c64b34dee7097, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b0baf20f5dd2e94494f42f48f2dc871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0.2
+  lookSpeed: 2
 --- !u!1 &1602938386
 GameObject:
   m_ObjectHideFlags: 0
@@ -3609,26 +3609,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1602938387}
   audioSource: {fileID: 0}
-  videoUrls:
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/0.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/1.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/2.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/3.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/4.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/5.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/6.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/7.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/8.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/9.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/10.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/11.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/12.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/13.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/14.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/15.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/16.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/17.mp4
-  - /storage/emulated/0/Android/obb/com.LifeVR.NestHotels/18.mp4
+  videoClips:
+  - {fileID: 32900000, guid: 46d4d6504883be64fb5ddc0184aaed19, type: 3}
+  - {fileID: 32900000, guid: 787a1f7acc085204fad6892da4b94a86, type: 3}
+  - {fileID: 32900000, guid: fd700c104297ab249a9f29d00a5ad0ed, type: 3}
+  - {fileID: 32900000, guid: 996639af0b7a202448a65745d1dccd64, type: 3}
+  - {fileID: 32900000, guid: 3f566072477bee54d9ce6f0280cca5fd, type: 3}
+  - {fileID: 32900000, guid: 98d5a11200079f74ab4422a607996233, type: 3}
+  - {fileID: 32900000, guid: a148a2d3fccdba94db23e9c7249fa968, type: 3}
+  - {fileID: 32900000, guid: 718ce03d549c8d840bdf3b415fa0f67f, type: 3}
+  - {fileID: 32900000, guid: ecbb7271f4cc9f9478a68b4314cd14b6, type: 3}
+  - {fileID: 32900000, guid: fa4d66eedcd0c6247928838f9a71b48e, type: 3}
+  - {fileID: 32900000, guid: 1d70e643e89e0f54b8088fe42a009d2d, type: 3}
+  - {fileID: 32900000, guid: cf868b8bd3c230c4eb5d93e5d8a8e09b, type: 3}
+  - {fileID: 32900000, guid: 5e634400847610f4c80caf2744f99d8a, type: 3}
+  - {fileID: 32900000, guid: f70f9506b7fa2ee4d9c61587df329b89, type: 3}
+  - {fileID: 32900000, guid: 5fcc1779ed703f3499e8e6ad91ca184d, type: 3}
+  - {fileID: 32900000, guid: 8ce4dcaf496eddd408a715be99363cf2, type: 3}
+  - {fileID: 32900000, guid: 2062ef58f95ebf544ba006cc27bcba03, type: 3}
+  - {fileID: 32900000, guid: 184cf71f7146a664b9a65f4e07c59d54, type: 3}
+  - {fileID: 32900000, guid: 3102d1b7ef6af9849be7034394f63434, type: 3}
 --- !u!1 &1723895037
 GameObject:
   m_ObjectHideFlags: 0
@@ -4660,6 +4660,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 236614587}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 481498410}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
