@@ -1530,8 +1530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 542, y: 113}
-  m_SizeDelta: {x: 128, y: 128}
+  m_AnchoredPosition: {x: 539.9, y: 142}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &481498412
 MonoBehaviour:
@@ -1669,7 +1669,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3708b1d8e45366b489c18df71670cecd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5e7560145c164c4a853070eb40daa67, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2193,7 +2193,7 @@ GameObject:
   - component: {fileID: 855140676}
   - component: {fileID: 855140675}
   m_Layer: 5
-  m_Name: WashRoomButton
+  m_Name: BathRoomButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2294,7 +2294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a97db8fb14f5b544091ed09ad2bcf3a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa19ef626b601dc449eeb8dcf36470d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2457,7 +2457,7 @@ GameObject:
   - component: {fileID: 957434175}
   - component: {fileID: 957434174}
   m_Layer: 5
-  m_Name: WashRoomButton
+  m_Name: BathRoomButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2558,7 +2558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a97db8fb14f5b544091ed09ad2bcf3a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa19ef626b601dc449eeb8dcf36470d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3865,7 +3865,7 @@ GameObject:
   - component: {fileID: 1780738155}
   - component: {fileID: 1780738154}
   m_Layer: 5
-  m_Name: WashRoomButton
+  m_Name: BathRoomButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3966,7 +3966,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a97db8fb14f5b544091ed09ad2bcf3a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa19ef626b601dc449eeb8dcf36470d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4165,7 +4165,7 @@ GameObject:
   - component: {fileID: 1870502166}
   - component: {fileID: 1870502165}
   m_Layer: 5
-  m_Name: WashRoomButton
+  m_Name: BathRoomButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4266,7 +4266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a97db8fb14f5b544091ed09ad2bcf3a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa19ef626b601dc449eeb8dcf36470d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
