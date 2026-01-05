@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <title>Unity WebGL Player | VRScene360</title>
+
+  <!-- Mobile scaling -->
+  <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #000;
+    }
+
+    #unity-container {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #unity-canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #231F20;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="unity-container">
+    <canvas id="unity-canvas" tabindex="-1"></canvas>
+  </div>
+
+  <!-- Unity loader -->
+  <script src="Build/Builds.loader.js"></script>
+
+  <script>
+    const canvas = document.getElementById("unity-canvas");
+
+    createUnityInstance(canvas, {
+        dataUrl: "Build/Builds.data",
+        frameworkUrl: "Build/Builds.framework.js",
+        codeUrl: "Build/Builds.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "LifeVR",
+        productName: "VRScene360",
+        productVersion: "0.1.0",
+        matchWebGLToCanvasSize: true
+    });
+
+    /* Called from Unity (user gesture required) */
+    function EnterFullscreen() {
+      if (!canvas) return;
+
+      if (canvas.requestFullscreen) {
+        canvas.requestFullscreen();
+      } else if (canvas.webkitRequestFullscreen) {
+        canvas.webkitRequestFullscreen();
+      } else if (canvas.msRequestFullscreen) {
+        canvas.msRequestFullscreen();
+      }
+    }
+  </script>
+</body>
+</html>
